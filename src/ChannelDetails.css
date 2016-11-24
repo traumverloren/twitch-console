@@ -25,19 +25,22 @@
   text-align: left;
 }
 
-.Channel-Title {
-  font-size: 18px;
-  padding-bottom: 5px;
-
-}
-
 .Channel-Stream {
   font-size: 14px;
+  margin-right: 10px;
+}
+
+.Channel-Title {
+  padding-bottom: 5px;
+}
+
+.offline {
+  font-style: italic;
 }
 
 .Channel-Logo {
   height: 80px;
-  width: auto;
+  width: 80px;
   margin: 0 10px 0 10px;
 }
 

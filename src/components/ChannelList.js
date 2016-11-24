@@ -3,7 +3,7 @@ import ChannelDetails from './ChannelDetails'
 import '../ChannelList.css'
 import jsonp from 'jsonp-promise'
 
-const channelsList = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "noobs2ninjas", "comster404"]
+const channelsList = ["ESL_SC2", "futuremangaming", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "noobs2ninjas", "comster404"]
 
 // Get detailed streaming info for each channel.
 // needed to use jsonp to be able to access twitch api with CORS blockout.
@@ -67,7 +67,7 @@ class ChannelList extends Component {
               name={channel.name}
               closedAccount={channel.closedAccount}
               isStreaming={channel.stream !== null}
-              currentStream={channel.stream !== null ? `${channel.stream.game}: ${channel.stream.channel.status}` : null}
+              currentStream={channel.stream !== null ? `${channel.stream.game}: ${channel.stream.channel.status}` : 'offline' }
               logo={channel.logo}
               onClick={() => this.handleClick(channel.name) }/>
         ))}

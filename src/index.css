@@ -8,3 +8,11 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Press Start 2P', cursive;
 }
+
+/* =========== STUPID MEDIA QUERIES =========== */
+/* Gotta look decent on mobile too */
+@media (max-width: 700px) {
+  body {
+    font-size: 1em;
+  }
+}

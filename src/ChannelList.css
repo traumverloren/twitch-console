@@ -1,0 +1,16 @@
+.ChannelList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 700px) {
+  .ChannelList {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UserList from './components/UserList'
+import ChannelList from './components/ChannelList'
 import './App.css'
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
           <i className="fa fa-twitch fa-4x" aria-hidden="true"></i>
           <h2>Twitch Streamers</h2>
         </div>
-        <UserList />
+        <ChannelList />
       </div>
     );
   }

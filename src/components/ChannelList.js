@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ChannelDetails from './ChannelDetails'
+import Loading from './Loading.js'
 import '../ChannelList.css'
 import jsonp from 'jsonp-promise'
 
@@ -60,6 +61,8 @@ class ChannelList extends Component {
 
   render() {
     return (
+      this.state.isLoading === true
+      ? <Loading /> :
       <div className="ChannelList">
         {this.state.channelsInfo.map((channel) => (
           <ChannelDetails
